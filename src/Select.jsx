@@ -29,12 +29,12 @@ function Select() {
             </select>
             <div className={disActive ? "color-container" : ""}>
                 {disActive ? checkList.map((el, ind) => {
-                        return
+                        return(
                         <div data-color={el.toLowerCase()}
                             key={ind}
                             style={{background: `${el.toLowerCase()}`}}>
                             {isShow ? <p>{el}</p> : ""}
-                        </div>
+                        </div>)
                     }) : ""}
             </div>
         </>
